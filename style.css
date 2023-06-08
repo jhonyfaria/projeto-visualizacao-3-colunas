@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.container-card {
+    width: 835px;
+    height: 454px;
+    display: flex;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0 0 7px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 7px 7px 0;
+}
+
+.img-sedan, .img-suvs, .img-luxury {
+    margin: 2.7rem 0 1.6rem 2.8rem;
+    height: 2.3rem;
+}
+ 
+.title-sedan, .title-suv, .title-luxury {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    padding: 0 0 1.6rem 2.8rem;
+}
+
+.text-sedan, .text-suv, .text-luxury {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    margin: 0 2.2rem 2rem 2.8rem;
+    padding-bottom: 2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.7px;         
+}
+
+button {
+    margin: 0.8rem 4rem 2rem 2.8rem;
+    padding: 0.8rem 30px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button-sedan:hover, .button-suv:hover, .button-luxury:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.button-sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+.button-suv {
+    color: hsl(184, 100%, 22%);
+}
+
+.button-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution { 
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color:hsl(31, 77%, 52%);
+    text-decoration: underline;
+} 
+
+@media (max-width:850px) {
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100%;
+    }
+
+    .sedans {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .text-sedan, .text-suv, .text-luxury {
+        margin-bottom: 0;
+        padding: 0 0 0.7rem 0;  
+    }
+
+    button {
+        margin-bottom: 2.8rem;
+    }
+}
